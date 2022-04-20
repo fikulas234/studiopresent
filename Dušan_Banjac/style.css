@@ -1,0 +1,257 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    transition:all .2s linear;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.meat-section{
+    width: 100%;
+    height: 540px;
+    background: url(images/meat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meat-section h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 26px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.meat-button button{
+    background: #ffffff;
+    color: #252525;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid red;
+    border-radius: 40px;
+    padding: 15px 50px 15px 50px;
+}
+
+.dark {
+    background-color: black;
+    padding-top: 100px;
+}
+
+.dark img {
+    padding-left: 200px;
+}
+
+.dark h2{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: initial;
+    padding-top: 25px;
+}
+
+.dark button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #a62120;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 15px 50px 15px 50px;
+    margin-top: 32px;
+}
+
+.dark {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logoDeviderCenterFirst {
+    background-color: black;
+}
+
+.logoDeviderCenterFirst{
+    text-align: center;
+    padding-top: 130px;
+}
+
+.darkSecond {
+    background-color: black;
+}
+
+.darkSecond .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 200px;
+}
+
+.darkSecond h2{
+    padding-top: 50px;
+    padding-right: 100px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.darkSecond p{
+    color: #ffffff67;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 10px;
+    text-transform: initial;
+}
+
+.darkSecond .logoDeviderCenterSecond {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.darkThird {
+    background-color: black;
+}
+
+.darkThird p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 100px;
+    color: #ffffff67;
+}
+
+.darkThird h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    text-transform: initial;
+}
+
+.darkThird .leftCard{
+    background-color: rgb(26, 26, 26);
+    margin-top: 100px;
+}
+
+.darkThird .middleCard{
+    background-color: rgb(38, 38, 38);
+}
+
+.middleCardPhotos{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.middleCard .review {
+    padding-top: 30px;
+}
+
+.middleCardText p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: initial;
+    text-align: center;
+    padding: 95px 40px 50px 40px;
+} 
+
+.middleCardLowerTextName p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.middleCardLowerTextProfession p{
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.darkThird .rightCard{
+    background-color: rgb(26, 26, 26);
+    margin-top: 100px;
+}
+
+.leftCardText p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: initial;
+    text-align: center;
+    padding: 190px 40px 50px 40px;
+}
+
+.leftCardTextName p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rightCardText p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: initial;
+    text-align: center;
+    padding: 190px 40px 50px 40px;
+}
+
+.rightCardTextName p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .lowerButton button{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #A62120;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 15px 50px 15px 50px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    
+}
+
+.containerFooter{
+    background-color: green;
+}
+
+.logoFooterBottom {
+    text-align: center;
+    padding-bottom: 50px;
+}

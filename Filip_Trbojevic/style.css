@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -17,6 +18,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0;
+
 }
 
 #links li {
@@ -58,7 +60,7 @@ nav {
 }
 
 #logo {
-    margin-right: 30px;
+    margin-right: 25px;
     z-index: 1;
     transform: translateY(25%);
 
@@ -115,6 +117,10 @@ nav {
     justify-content: end;
 }
 
+.open-time p span {
+    font-weight: bold;
+}
+
 .download {
     display: flex;
     justify-content: space-between;
@@ -147,6 +153,9 @@ nav {
     display: none;
 }
 
+#second-opentime {
+    display: none;
+}
 
 @media (max-width: 1000px) {
     #links li{
@@ -167,7 +176,7 @@ nav {
     }
 
     .burger-nav {
-        margin-right: 20px;
+        margin-right: 40px;
         width: 28px;
         height: 30px;
     }
@@ -182,6 +191,93 @@ nav {
         border-radius: 2px;
     }
 
-    
+    .open-header {
+        height: 50px;
+        justify-content: end;
+    }
 
+    .open-time {
+        height: 100%;
+        width: 400px;
+    }
+
+    .open-time p {
+        align-self: center;
+        margin-right: 20px;
+    }
+
+    .open-time p span {
+        font-weight: bold;
+    }
+
+    .open-time img {
+        display: none;
+    }
+    
+    .image {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .slide-arrows {
+        display: none;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    #second-opentime {
+        display: none;
+    }
+
+    
 }
+
+@media (max-width: 590px) {
+    .open-time p {
+        font-size: 10px;
+    }
+
+    .open-time {
+        height: 100%;
+        width: 280px;
+    }
+
+    .open-header {
+        height: 40px;
+        text-align: end;
+    }
+
+    .nav-header {
+        height: 80px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin-top: -30px;
+    }
+
+    .image {
+        margin: 0;
+    }
+
+    .header {
+        height: 120px;
+    }
+
+    #first-opentime {
+        display: none;
+    }
+
+    #second-opentime {
+        display: block;
+    }
+}
+

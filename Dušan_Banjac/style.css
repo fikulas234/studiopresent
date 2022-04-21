@@ -11,14 +11,43 @@ body{
     overflow-x: hidden;
 }
 
-.menuHolderBar{
-    background-color: #ffffff;
-    padding: 30px;
+.menuItemList {
+    display: block;
+    margin: 50px 50px;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
 }
 
-.hamburgerMenuIcon{
-    display: flex;
-    justify-content: flex-end;
+.hamburgerMenuState {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    right: 20px;
+    padding: 4px;
+    background: #ffffff;
+}
+
+.closeMenuIcon{
+    display: none;
+}
+
+.hamburgerMenu{
+    position: fixed;
+    transform: translateY(-100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #000000;
+    color: #ffffff;
+    list-style: none;
+}
+
+.showMenu {
+    transform: translateY(0);
 }
 
 .meat-section{
@@ -257,8 +286,15 @@ body{
     
 }
 
-#footer .footerContainer{
-    background-color: green;
+#footer .footerCompanyInfo{
+    background-color: #B50014;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .footerSocialLinks ul{
+    display: flex;
 }
 
 .footerCompanyInfo ul li img{
@@ -268,15 +304,29 @@ body{
 .footerCompanyInfo ul li p{
     display: inline-block;
     text-transform: initial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
 }
 
+.footerCompanyInfo ul{
+    list-style-type: none;
+}
 
-
-
-
-#creditSection .containerCredit{
+#creditSection .creditText{
     background: #66000B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+#creditSection .creditText p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #ffffff80;
+} 
 
 
 

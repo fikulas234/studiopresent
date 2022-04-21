@@ -5,4 +5,3 @@ ham.addEventListener('click', () => {
     nav.classList.toggle('nav-toggle');
     ham.classList.toggle('close');
 });
-

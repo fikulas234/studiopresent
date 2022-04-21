@@ -1089,9 +1089,41 @@ footer {
     }
 
     .footer-container{
-        width: 100%;
-        border: 1px solid blue;
+        padding: 15px 0;
     }
+
+    .footer-wrapper{
+       display: flex;
+       width: 100%;
+   
+    }
+    
+    .footer-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 35px;
+    }
+
+    .footer-content-1{
+        display: flex;
+        align-items: left;
+    }
+
+
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .social h4{
+        padding-right: 25px;
+    }
+
+
 
     footer {
         height: 100%;
@@ -1113,4 +1145,20 @@ footer {
        justify-content: space-between;
        border: 1px solid blue;
    }
+
+.sm-link i {
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.social-items .sm-link {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items:center; 
+ 
+}
+
 }

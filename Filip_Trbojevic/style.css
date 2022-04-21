@@ -6,6 +6,11 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 100%;
     height: 680px;
@@ -61,7 +66,7 @@ nav {
 
 #logo {
     margin-right: 25px;
-    z-index: 1;
+    z-index: 2;
     transform: translateY(25%);
 
     
@@ -161,9 +166,45 @@ nav {
     display: none;
 }
 
+.float-menu {
+    background-color: black;
+    max-height: 395px;
+    max-width: 300px;
+    margin-top: 85px;
+    position: absolute;
+    left: -200px;
+    top: 8px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
 
+.float-menu ul {
+    margin: 40px;
+    list-style: none;
+    height: 400px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.float-menu ul li {
+    color: #fff;
+
+}
+
+#img2, #img3, #img4, #img5 {
+    display: none;
+}
 
 @media (max-width: 1000px) {
+
+    .float-menu.active {
+        left: 0;
+    }
+
     #links li{
         display: none;
     }
@@ -182,6 +223,7 @@ nav {
         margin-right: 40px;
         width: 28px;
         height: 30px;
+        cursor: pointer;
         
     }
 
@@ -264,6 +306,17 @@ nav {
 }
 
 @media (max-width: 590px) {
+    .float-menu {
+        max-height: 340px;
+        max-width: 300px;
+        margin-top: 80px; 
+    }
+    
+    .float-menu ul {
+        height: 300px;
+        padding: 0;
+    }
+
     .open-time p {
         font-size: 10px;
     }
@@ -305,23 +358,6 @@ nav {
         display: block;
     }
 
-    /* .layer {
-        display: block;
-        text-align: center;
-        background-color: black;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px;
-
-    } */
-
-    /* .layer h1 {
-        margin: 0 20px
-    }
-
-    .layer p {
-        margin: 16px 20px;
-    } */
 
 
 }

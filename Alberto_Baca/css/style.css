@@ -655,7 +655,7 @@ header {
     width: 100%;
 }
 
-.footer-content .address {
+.footer-content-1{
     text-align: center;
     margin: 0 auto;
     font-weight: 300;
@@ -687,12 +687,13 @@ header {
 
 .icons {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
 }
 
-.sm-link i {
-    margin: auto;
-    font-size: 3rem;
-
+.sm-link i { 
+    font-size: 2rem;
 
 }
 
@@ -701,22 +702,23 @@ header {
     height: 4rem;
     border: 2px solid #fff;
     border-radius: 50%;
-    display: flex;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-    transition: background-color 0.5s;
+    border: 1px solid blue;
 }
 
 .social-items .icons a {
     text-decoration: none;
     color: #fff;
+        border: 1px solid blue;
 
 }
 
 .ri {
     width: 3rem;
     height: 3rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
 }
 
 footer {
@@ -1089,33 +1091,48 @@ footer {
     }
 
     .footer-container{
+        height: 100%;
         padding: 15px 0;
     }
 
     .footer-wrapper{
-       display: flex;
+      margin: 0 auto;
        width: 100%;
+       border: 1px solid blue;
    
     }
     
     .footer-content{
-        width: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin: 0 35px;
+        margin: 0 auto;
+        border: 1px solid yellow;
     }
 
     .footer-content-1{
         display: flex;
-        align-items: left;
+        flex: 1;
+        font-weight: 300;
+        flex-direction: column;
+        line-height: 2;
+        width: 400px;
+         }
+        
+    
+
+  
+
+    .footer-content .brath-logo{
+        display: flex;
+        flex: 2;
     }
 
 
     .social{
         display: flex;
+        flex: 1;
         align-items: center;
-        justify-content: space-between;
+      
 
     }
 
@@ -1147,8 +1164,7 @@ footer {
    }
 
 .sm-link i {
-    margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .social-items .sm-link {

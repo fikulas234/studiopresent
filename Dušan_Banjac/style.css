@@ -11,16 +11,13 @@ body{
     overflow-x: hidden;
 }
 
-.hamburgerContainer{
-    background-color: #000000;
-}
-
 .menuItemList {
     display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
+    margin: 50px 50px;
+    font-size: 32px;
+    color: #ffffff;
     text-decoration: none;
+    text-align: center;
 }
 
 .hamburgerMenuState {
@@ -39,16 +36,18 @@ body{
 .hamburgerMenu{
     position: fixed;
     transform: translateY(-100%);
-    transition: transform 0.2s;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
-    background: rgb(0, 0, 0);
-    color: white;
+    z-index: 100;
+    background: #000000;
+    color: #ffffff;
     list-style: none;
-    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
 }
 
 .meat-section{
@@ -314,7 +313,6 @@ body{
 .footerCompanyInfo ul{
     list-style-type: none;
 }
-
 
 #creditSection .creditText{
     background: #66000B;

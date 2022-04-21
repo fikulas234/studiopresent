@@ -260,3 +260,24 @@ body{
 #footer .footerContainer{
     background-color: green;
 }
+
+.footerCompanyInfo ul li img{
+    display: inline-block;
+}
+
+.footerCompanyInfo ul li p{
+    display: inline-block;
+    text-transform: initial;
+}
+
+
+
+
+
+#creditSection .containerCredit{
+    background: #66000B;
+}
+
+
+
+

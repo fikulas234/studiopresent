@@ -1,12 +1,11 @@
-/* const links = document.getElementById("links");
+/* const links = document.getElementsByClassName("line");
 const burger = document.getElementsByClassName("burger-nav");
 
-function hamburgerNav() {
-    if (links.style.display === "block") {
-        links.style.display = "none";
-    } else {
-        links.style.display = "block";
-    }
+burgerNav = function() {
+    burger.toogleClass.toogle("is-active")
+    
 }
 
-burger.addEventListener("click", hamburgerNav); */
+addEventListener("click", burgerNav); */
+
+

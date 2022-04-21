@@ -171,20 +171,18 @@ nav {
     #links {
         justify-content: end;
     }
-
-    .burger-nav {
-        display: block;
-        align-self: center;
-    }
     
     .download {
         margin-right: 20px;
     }
 
     .burger-nav {
+        display: block;
+        align-self: center;
         margin-right: 40px;
         width: 28px;
         height: 30px;
+        
     }
 
     .burger-nav span {
@@ -196,6 +194,8 @@ nav {
         margin: 5px 0;
         border-radius: 2px;
     }
+
+    
 
     .open-header {
         height: 50px;
@@ -222,6 +222,7 @@ nav {
     
     .image {
         margin-top: 20px;
+        margin-bottom: -5px;
         width: 100%;
         height: auto;
     }
@@ -289,6 +290,7 @@ nav {
 
     .image {
         margin: 0;
+        margin-bottom: -5px;
     }
 
     .header {

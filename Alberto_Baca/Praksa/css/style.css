@@ -9,8 +9,6 @@
 h3 {
     font-size: 2rem;
     font-weight: 700;
-    margin: 10px 0;
-    text-align: center;
 }
 
 html {
@@ -233,16 +231,28 @@ header {
 
 /*Dry Aged Section*/
 
-.ck-main {
+.dry-container {
     width: 100%;
     background-color: rgb(16, 13, 13);
 }
 
-.container-ck {
+.dry-wrapper{
     padding: 10px;
     display: flex;
     flex-direction: column;
 
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.division img {
+    width: 400px;
+    min-width: 200px;
+    margin-top: 20px;
 }
 
 .item {
@@ -266,33 +276,21 @@ header {
     line-height: 1.8;
 }
 
-.tres img {
-    width: 458px;
-}
-
-
 .button-item {
-    display: flex;
-
-}
-
-.division {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    
+
 }
 
-.division img {
-    width: 150px;
-    height: 150px;
-}
 
 .button-item a {
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
+/*Dry Aged Section Finish*/
 
 /*Buchen Section*/
 .buchen-flexbox {
@@ -315,7 +313,8 @@ header {
 }
 
 .buchen-text h3 {
-    width: 276px;
+    width: 300px;
+    text-align: center;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -455,7 +454,7 @@ header {
 
 .food-flex-container {
     width: 100%;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,60 +462,64 @@ header {
 
 
 .food-flex-content img {
-    width: 100%;
-    margin-top: 10px;
+    width: 90%;
+    margin: 10px 0;
 }
 
 .food-flex-content {
     display: flex;
-   flex-direction: column;
-
+    flex-direction: column;
+    width: 100%;
 }
+
+.food-flex-content img{
+    margin: 10px auto;
+}
+
+
 
 /*Spices FLexbox*/
-.spice-flexbox {
-    background-color: #A62120
-}
-
-.spice-flexbox .offers {
+.flex-container {
+    background-color: #A62120;
+    text-align: center;
+    color: #FFF;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
-.offers img {
-    width: 100%;
-    height: 100%;
+.flex-left {
+    width: 90%;
+    margin: 50px auto;
 }
 
-.spice-text {
-    margin: 50px 0;
-    font-family: "Roboto";
+.flex-left .h3{
+    width: 350px;
+    line-height: 1.2;
 }
 
-
-
-.spice-text h3 {
-    width: 276px;
-    margin: auto;
-    margin-bottom: 40px;
+.flex-left h4{
+    width: 350px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 
-.spice-text h4 {
-    width: 300px;
-    font-size: 1.3rem;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.offers p {
-    width: 300px;
+.flex-left p {
     font-weight: 300;
-    margin: auto;
-    line-height: 1.8;
-    width: 80%;
-    padding: 10px 10px;
+    font-size: 1rem;
+    margin-top: 40px;
+    line-height: 1.5;
 }
 
+.flex-right {
+    width: 100%;
+}
+
+.flex-right img{
+    width: 100%;
+    max-width: 100%;
+}
+/*Spices FLexbox Finish*/
 
 
 /*Fleisch Section*/
@@ -577,6 +580,7 @@ header {
 
 .brath-first {
     width: 300px;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -593,6 +597,7 @@ header {
 }
 
 .brath-second {
+    text-align: center;
     margin: 80px;
 }
 
@@ -798,37 +803,7 @@ footer {
         overflow: hidden;
     }
 
-    /*New test flexbox*/
-
-    .spice-flexbox .offers {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .offers img {
-        width: 50%;
-    }
-
-    .offers .spice-text {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .spice-headers {
-        width: 100%;
-        text-align: left;
-    }
-
-    .spice-text h3 {
-        width: 450px;
-        text-align: left;
-    }
-
-    .spice-text h4 {
-        width: 450px;
-    }
+    /*Spice flexbox*/
 
     /*Buchen Section*/
 
@@ -847,7 +822,6 @@ footer {
 
     .buchen-text h3 {
         width: 350px;
-        text-align: center;
     }
 
     /*DryAged*/
@@ -1036,6 +1010,61 @@ footer {
         width: 300px;
     }
 
+    .dry-wrapper {
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid blue;
+    
+    }
+    
+    .division {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px auto;
+        width: 700px;
+        height: 500px;
+        border: 1px solid blue;
+    }
+    
+
+
+
+    .division .img-2, .img-3,
+    .img-4 {
+        width: 100px;
+        height: 200px;
+        min-width: 200px;
+        margin-top: 20px;
+    }
+
+
+
+    .buchen-text{
+        margin: 50px auto;
+    }
+
+
+    .buchen-text .buchen-title {
+        width: 300px;
+        text-align: left;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    
+    
+    .buchen-text ul li {
+        text-align: left;
+        font-weight: 300;
+        margin: 0 auto;
+        line-height: 1.8;
+        width: 40%;
+        padding: 10px 10px;
+    }
+
+
+
     .brath-first-wrap {
         display: flex;
         justify-content: space-evenly;
@@ -1185,12 +1214,38 @@ footer {
     }
 
     .food-flex-content {
-        max-width: 100%;
+        width: 100%;
+        max-width: 1100px;
         display: flex;
         flex-direction: row;
     }
 
+    /*Spice Flexbox*/
 
+    .flex-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .flex-left {
+       width: 50%;
+       text-align: left;
+       padding-left: 100px;
+    }
+  
+    .flex-right {
+        width: 50%;
+    }
+    
+    .flex-right img {
+        width: 100%;
+        max-width: 1200px;
+        min-width: 700px;
+        height: auto;
+    }
+
+  
 
 
 }

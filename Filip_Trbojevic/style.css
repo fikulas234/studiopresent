@@ -35,6 +35,20 @@ body {
 
 }
 
+#links li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#links li:hover::after{
+    width: 100%;
+}
+
 ul a {
     text-decoration: none;
     color: white;
@@ -68,8 +82,7 @@ nav {
     margin-right: 25px;
     z-index: 2;
     transform: translateY(25%);
-
-    
+ 
 }
 
 .open-header p {
@@ -195,9 +208,17 @@ nav {
 
 }
 
-#img2, #img3, #img4, #img5 {
-    display: none;
+.image {
+    background-image: url(img/image-1.jpg);
+    background-size: cover;
 }
+
+.left-trigger:hover, .right-trigger:hover {
+    cursor: pointer;
+}
+
+
+
 
 @media (max-width: 1000px) {
 
@@ -235,9 +256,18 @@ nav {
         align-self: center;
         margin: 5px 0;
         border-radius: 2px;
+        transition: 0.4s;
     }
 
-    
+    .change .line1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
+    }
+      
+    .change .line2 {opacity: 0;}
+      
+    .change .line3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
 
     .open-header {
         height: 50px;

@@ -166,6 +166,11 @@ html {
 
 /*Hero Section Slider*/
 
+.slider .mobile-img{
+    background: url(../images/image\ 14.jpg);
+    width: 100%;
+    height: 50vh;
+}
 
 /*Hero Section Slider Ends*/
 

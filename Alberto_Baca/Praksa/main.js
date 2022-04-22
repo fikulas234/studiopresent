@@ -22,3 +22,5 @@ setInterval(function() {
 
 
 }, 5000);
+
+clearInterval();

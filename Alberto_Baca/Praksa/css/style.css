@@ -13,7 +13,7 @@ h3 {
 
 html {
     font-family: "Roboto";
-    color: #FFF;
+    color: #fff;
 }
 
 
@@ -897,13 +897,13 @@ footer {
     
     .slider {
         max-width: 100%;
-        max-height: 100%;
+        height: 70vh;
         overflow: hidden;
     }
     
     .slides {
         width: 500%;
-        height: 500px;
+        height: 100%;
         display: flex;
     }
     
@@ -917,8 +917,7 @@ footer {
     }
     
     .slide img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
         object-fit: contain;
         display: block;
     }
@@ -926,10 +925,10 @@ footer {
     /*manual slider*/
     .manual-navigation {
         position: absolute;
-        width: 800px;
-        margin-top: -40px;
+        width: 100%;
         display: flex;
         justify-content: center;
+        margin-top: -60px;
     
     }
     
@@ -974,9 +973,11 @@ footer {
     .navigation-auto {
         position: absolute;
         display: flex;
-        width: 800px;
+        width: 100%;
         justify-content: center;
-        margin-top: 460px;
+        margin-top: 646px;
+        
+       
     }
     
     .navigation-auto div {

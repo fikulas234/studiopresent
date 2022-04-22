@@ -16,220 +16,147 @@ html {
     color: #FFF;
 }
 
-/*Navigation*/
-.header-nav {
+
+/*Navigation Starts*/
+
+.container {
+    width: 100%;
     background-color: #A62120;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: auto;
 
 }
 
-.nav-container {
-    display: block;
+.header {
     width: 100%;
-    height: 100%;
-}
-
-header {
-    padding: 1rem 0;
     margin: 0 auto;
-    width: 85%;
-    font-size: 2rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid blue;
 }
 
-.header-nav header {
-    width: 100%;
+.header header {
     display: flex;
+    width: 90%;
     align-items: center;
     justify-content: space-between;
 
 }
 
-.header-nav .nav-bar nav.nav-toggle {
-    transform: translateX(0);
+.header .brand {
+    font-weight: 500;
 }
 
-.header-nav header .brand {
-    position: relative;
-    margin-left: 20px;
-}
-
-.header-nav header .brand .name {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    z-index: 1000;
-}
-
-.header-nav header .brand .vector {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    top: -25px;
-    left: -10px;
-
-}
-
-.header-nav .nav-bar nav {
+.header .nav-bar nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 0;
+    background-color: aquamarine;
     position: absolute;
     top: 68px;
     width: 100%;
     height: 100vh;
     text-align: center;
     padding: 20px 0;
-    transition: 0.5s ease all;
+    transition: 0.5s ease-in-out all;
+    transform: translateX(100%);
+
 }
 
-.header-nav header .nav-bar .nav-list {
+.header .nav-bar nav.nav-toggle {
+    transform: translateX(0);
+}
+
+.header header .nav-bar .nav-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
 }
 
-.header-nav header .nav-bar .nav-list li {
+.header header .nav-bar .nav-list li {
     padding: 5px 0;
 }
 
-.header-nav header .nav-bar .nav-list a {
+.header header .nav-bar .nav-list a {
     text-decoration: none;
-    font-size: 2rem;
-    text-transform: capitalize;
+    font-size: 5rem;
+    text-transform: uppercase;
 }
 
+.header header .nav-bar .nav-button {
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    border-top: .5px solid rgba(255, 255, 255, 0.733);
+}
 
-.header-nav .nav-bar .ham {
+.header header .nav-bar .nav-button a {
+    display: inline-block;
+    padding: 25px 80px;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 9px;
+}
+
+.header .nav-bar .ham {
     display: inline-block;
     cursor: pointer;
     padding: 20px;
+    border: 1px solid grey;
 }
 
-.header-nav .nav-bar .ham .bar {
+.header .nav-bar .ham .bars {
     height: 2px;
     width: 20px;
     position: relative;
-    background-color: #fff;
+    background-color: blue;
     transition: .5s ease all;
 }
 
-.header-nav .nav-bar .ham .bar::before,
-.header-nav .nav-bar .ham .bar::after {
+.header .nav-bar .ham .bars::before,
+.header .nav-bar .ham .bars::after {
     content: '';
     height: 2px;
     width: 20px;
     position: absolute;
     transition: .5s ease all;
-    background-color: #fff;
+    background-color: blue;
     transition: .5s ease all;
 }
 
-.header-nav .nav-bar .ham .bar::before {
+.header .nav-bar .ham .bars::before {
     top: -5px;
     left: 0;
 }
 
-.header-nav .nav-bar .ham .bar::after {
+.header .nav-bar .ham .bars::after {
     bottom: -5px;
     left: 0;
 }
 
-.header-nav .nav-bar .ham.close .bar::before {
+.header .nav-bar .ham.close .bars::before {
     top: 0;
     transform: rotate(45deg);
 }
 
-.header-nav .nav-bar .ham.close .bar::after {
+.header .nav-bar .ham.close .bars::after {
     top: 0;
     transform: rotate(-45deg);
 }
 
-.header-nav .nav-bar .ham.close .bar {
+.header .nav-bar .ham.close .bars {
     background-color: transparent;
 }
-
-/*Small Header*/
-.main-header {
-    background-color: #24232a;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.small-header {
-
-    margin-right: 20px;
-    text-align: right;
-}
-
-.small-content {
-    align-items: center;
-}
-
-.small-content h6 {
-    font-size: .9rem;
-}
-
-.small-content p {
-    font-size: .8rem
-}
+/*Navigation Ends*/
 
 
-/*Hero Section*/
-.hero-section {
-    width: 100%;
-}
 
-.hero-wrapper {
-    background: url(../images/image\ 14.jpg) center/cover no-repeat;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    max-width: 100%;
-}
-
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    height: 300px;
-    width: 100%;
-    background-color: #000;
-}
-
-.hero-container .hero-heading {
-    margin-top: 50px;
-    font-size: 2.5rem;
-    width: 250px;
-    margin: 30px auto;
-
-}
-
-
-.hero-container .hero-description {
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.5;
-}
-
-.hero-container .hero-para {
-    width: 450px;
-    margin: 0 auto;
-}
-
-/*Dry Aged Section*/
+/**Dry Aged Section**/
 
 .dry-container {
     width: 100%;
@@ -283,7 +210,9 @@ header {
 
 }
 
-
+.button-item .right{
+    margin-left:20px;
+}
 .button-item a {
     text-decoration: none;
     color: white;
@@ -291,7 +220,10 @@ header {
 }
 /*Dry Aged Section Finish*/
 
-/*Buchen Section*/
+
+
+
+/*Buchen Section Starts*/
 .buchen-flexbox {
     background-color: #A62120
 }
@@ -350,9 +282,10 @@ header {
     color: #A62120;
 
 }
+/*Buchen Section Finish*/
 
 
-/*Das Handwerk Section*/
+/*Das Handwerk Section Starts*/
 .food-container {
     width: 100%;
     height: 100%;
@@ -439,8 +372,6 @@ header {
     overflow: hidden;
 }
 
-
-
 .dark-second::after {
     content: '';
     display: block;
@@ -474,10 +405,11 @@ header {
 .food-flex-content img{
     margin: 10px auto;
 }
+/*Das Handwerk Section Finish*/
 
 
 
-/*Spices FLexbox*/
+/*Spices Section Starts*/
 .flex-container {
     background-color: #A62120;
     text-align: center;
@@ -521,7 +453,7 @@ header {
 /*Spices FLexbox Finish*/
 
 
-/*Fleisch Section*/
+/*Fleisch Section Starts*/
 .fleisch-container {
     background: url(../images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png) center/cover no-repeat;
     display: flex;
@@ -557,6 +489,10 @@ header {
 .flei-text .flei-btn a {
     text-decoration: none;
 }
+
+/*Flei Section Finishes*/
+
+
 
 /*Brath Section*/
 .brath {
@@ -645,6 +581,7 @@ header {
     padding-top: 12px;
 
 }
+/*Brath Section Finishes*/
 
 /*Footer*/
 .footer-container {
@@ -690,8 +627,7 @@ header {
 .icons {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid blue;
+    justify-content: space-between;
 }
 
 .sm-link i { 
@@ -704,13 +640,11 @@ header {
     height: 4rem;
     border: 2px solid #fff;
     border-radius: 50%;
-    border: 1px solid blue;
 }
 
 .social-items .icons a {
     text-decoration: none;
     color: #fff;
-        border: 1px solid blue;
 
 }
 
@@ -720,7 +654,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid blue;
 }
 
 footer {
@@ -866,12 +799,11 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-    .header-nav .nav-bar {
-        width: 100%;
-        max-width: 1200px;
+    .header .nav-bar {
+        width: auto;
     }
-
-    .header-nav .nav-bar nav {
+    
+    .header .nav-bar nav {
         position: initial;
         transform: translate(0, 0);
         width: auto;
@@ -879,76 +811,33 @@ footer {
         flex-direction: row;
         background-color: transparent;
         padding: 0;
-        margin: auto;
     }
-
-    .header-nav .nav-bar nav .nav-list {
+    
+    .header .nav-bar nav .nav-list {
         display: flex;
         flex-direction: row;
         padding-bottom: 0;
     }
-
-    .header-nav .nav-bar nav .nav-list li {
+    
+    .header .nav-bar nav .nav-list li {
         padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: max-content;
-
-
+    
     }
-
-    .header-nav .nav-bar nav .nav-list li a {
+    
+    .header .nav-bar nav .nav-list li a {
         color: black;
-        font-size: 1rem;
-        color: #fff;
-
+        font-size: 1.5rem;
     }
-
-
-    .nav-list .download a {
-        color: #fff;
-
-    }
-
-    .header-nav .nav-bar .ham {
+    
+    .header .nav-bar .ham {
         display: none;
     }
 
-    .nav-list .out-item {
-        display: flex;
-        width: 200px;
-        flex-direction: row-reverse;
 
-    }
-
-    .nav-list .out-item a {
-        margin-left: 10px;
-    }
-
-    .header-nav header .brand {
-        position: relative;
-        margin-left: 300px;
-    }
-
-    .header-nav header .brand .name {
-        position: absolute;
-        top: -12px;
-        left: 5px;
-        width: 150px;
-        height: 150px;
-        z-index: 1000;
-    }
-
-    .header-nav header .brand .vector {
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        top: -25px;
-        left: -10px;
-        z-index: 1;
-
-    }
 
     .main-header {
         height: 30px;
@@ -998,7 +887,8 @@ footer {
     }
 
     .dry-container{
-        height: 100vh;
+        height: 100%;
+        width: 100%;
     }
 
     .dry-wrapper {
@@ -1054,7 +944,7 @@ footer {
 }
 
 .item-width{
-    margin: 50px;
+    margin: 80px auto;
     text-align: left;
     width: 35%;
 }
@@ -1065,7 +955,7 @@ footer {
 
 
     .buchen-text{
-        margin: 50px auto;
+        margin: 100px auto;
     }
 
 
@@ -1190,7 +1080,7 @@ footer {
     }
 
     .social h4{
-        padding-right: 25px;
+       margin-top: 40px;
     }
 
 
@@ -1213,7 +1103,6 @@ footer {
        display: flex;
        align-items: center;
        justify-content: space-between;
-       border: 1px solid blue;
    }
 
     .sm-link i {
@@ -1260,13 +1149,14 @@ footer {
     }
   
     .flex-right {
-        width: 50%;
+        width: 100%;
+        border: 1px solid blue;
     }
     
     .flex-right img {
         width: 100%;
         max-width: 1200px;
-        min-width: 700px;
+        min-width: 700px    ;
         height: auto;
     }
 

@@ -11,6 +11,11 @@ body{
     overflow-x: hidden;
 }
 
+.hamburgerContainer{
+    background-color: #000000;
+    height: 80px;
+}
+
 .menuItemList {
     display: block;
     margin: 50px 50px;
@@ -50,15 +55,73 @@ body{
     transform: translateY(0);
 }
 
-.meat-section{
+.hero-section{
     width: 100%;
-    height: 540px;
-    background: url(images/meat.jpg);
+    height: 680px;
+    background: url(images/heroImage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.heroHeadlineText h1{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: #FFFFFF;
+    padding-left: 150px;
+}
+
+.heroTextContainer{
+    width: 630px;
+    height: 350px;
+    background: #0000004d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.heroLowerText p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: initial;
+    padding-left: 150px;
+}
+
+.meat-section h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.heroRadioButtonStatus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.meat-section{
+    width: 100%;
+    height: 50vh;
+    background: url(images/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-color: #0000004d;
+    opacity: .9;
 }
 
 .meat-section h2{
@@ -186,12 +249,12 @@ body{
 }
 
 .darkThird .leftCard{
-    background-color: rgb(26, 26, 26);
+    background-color: #1a1a1a;
     margin-top: 100px;
 }
 
 .darkThird .middleCard{
-    background-color: rgb(38, 38, 38);
+    background-color: #262626;
 }
 
 .middleCardPhotos{
@@ -297,21 +360,47 @@ body{
     display: flex;
 }
 
+.footerSocialLinks img{
+    padding: 5px;
+}
+
+.footerSocialLinks p{
+    color: #FFFFFF;
+}
+
+.footerCompanyInfo{
+    padding-top: 20px;
+}
+
 .footerCompanyInfo ul li img{
     display: inline-block;
 }
 
-.footerCompanyInfo ul li p{
+.footerCompanyInfo img{
+    color: #ffffff;
+}
+
+.footerCompanyInfo ul li a{
     display: inline-block;
     text-transform: initial;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .footerCompanyInfo ul{
     list-style-type: none;
+}
+
+.footerLowerLogo img{
+    padding-bottom: 20px;
+}
+
+.footerSocialLinkText{
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 #creditSection .creditText{
@@ -322,6 +411,8 @@ body{
 }
 
 #creditSection .creditText p{
+    padding: 5px 5px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 28px;

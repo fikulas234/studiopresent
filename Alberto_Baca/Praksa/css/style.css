@@ -34,7 +34,6 @@ html {
     margin: 0 auto;
     padding: 1rem 0;
     font-size: 1.5rem;
-    border-bottom: 1px solid blue;
 }
 
 .header header {
@@ -49,13 +48,14 @@ html {
     font-weight: 500;
 }
 
+
 .header .nav-bar nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 0;
-    background-color: aquamarine;
+    background-color: #24232a;
     position: absolute;
     top: 68px;
     width: 100%;
@@ -84,22 +84,29 @@ html {
 
 .header header .nav-bar .nav-list a {
     text-decoration: none;
-    font-size: 5rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header header .nav-bar .nav-list a:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(121, 107, 107);
 }
 
 .header header .nav-bar .nav-button {
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: 1rem;
     display: block;
     width: 100%;
-    border-top: .5px solid rgba(255, 255, 255, 0.733);
 }
 
-.header header .nav-bar .nav-button a {
+.header header .nav-bar .download a {
     display: inline-block;
-    padding: 25px 80px;
+    padding: 10px 40px;
     text-decoration: none;
-    background-color: gray;
+    background-color: #fff;
+    color:#A62120;
     border-radius: 9px;
 }
 
@@ -107,14 +114,14 @@ html {
     display: inline-block;
     cursor: pointer;
     padding: 20px;
-    border: 1px solid grey;
+    border: 1px solid #fff;
 }
 
 .header .nav-bar .ham .bars {
     height: 2px;
     width: 20px;
     position: relative;
-    background-color: blue;
+    background-color: #fff;
     transition: .5s ease all;
 }
 
@@ -125,7 +132,7 @@ html {
     width: 20px;
     position: absolute;
     transition: .5s ease all;
-    background-color: blue;
+    background-color: #fff;
     transition: .5s ease all;
 }
 
@@ -430,6 +437,7 @@ html {
 
 .flex-left h4{
     width: 350px;
+    max-width: 350px;
     margin-top: 40px;
     font-size: 1.2rem;
     line-height: 1.2;
@@ -685,7 +693,7 @@ footer {
     color: rgb(205, 201, 201);
 }
 
-/*Media Queries*/
+/*MEDIA QUERIES*/
 
 @media screen and (min-width: 768px) {
     .main {
@@ -800,7 +808,8 @@ footer {
 
 @media screen and (min-width: 1200px) {
     .header .nav-bar {
-        width: auto;
+        width: 1200px;
+        max-width: 1200px;
     }
     
     .header .nav-bar nav {
@@ -829,10 +838,20 @@ footer {
     }
     
     .header .nav-bar nav .nav-list li a {
-        color: black;
-        font-size: 1.5rem;
+        color: #fff;
+        font-size: 1rem;
     }
     
+    .header .nav-bar nav .download{
+    font-size: 1.2rem;
+    padding-right: 10px;
+    }
+
+    .header .nav-bar nav .download a{
+        color:#FFF;
+        background-color: transparent;
+    }
+
     .header .nav-bar .ham {
         display: none;
     }
@@ -991,6 +1010,10 @@ footer {
         margin: 100px;
         margin-left: 140px;
 
+    }
+
+    .brath-first{
+        text-align: left;
     }
 
     .brath-first h3 {

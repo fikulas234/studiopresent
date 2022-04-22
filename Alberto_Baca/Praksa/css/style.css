@@ -163,6 +163,7 @@ html {
 /*Navigation Ends*/
 
 
+
 /*Hero Section Slider*/
 
 
@@ -451,7 +452,7 @@ html {
 .flex-container {
     background-color: #A62120;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -496,7 +497,7 @@ html {
 .fleisch-container {
     background: url(../images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png) center/cover no-repeat;
     display: flex;
-    background-color: black;
+    background-color: #000;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -517,7 +518,7 @@ html {
     justify-content: center;
     margin: auto;
     border-radius: 40px;
-    color: #24232a;
+    color: #A62120;
     background-color: #FFF;
     width: 200px;
     height: 40px;
@@ -892,8 +893,7 @@ footer {
     }
 
 
-    /*Hero Section*/
-    /*Slider*/
+    /*Hero Section Slider*/
     
     .slider {
         max-width: 100%;
@@ -915,7 +915,31 @@ footer {
         width: 20%;
         transition: 2s;
     }
-    
+
+    .mini-text{
+        color: #fff;
+        width: 700px;
+        height: 300px;
+        margin: 200px auto;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+    }
+
+    .mini-text p{
+        width: 400px;
+        font-weight: 300;
+        margin-top: 20px;
+        margin-left: 250px;
+    }
+
+    .mini-text h3 {
+        width: 400px;
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-left: 250px;
+    }
+
+  
     .slide img {
         width: 100%;
         object-fit: contain;
@@ -1033,9 +1057,6 @@ footer {
     .time-content .open{
         margin-right: 10px;
     }
-
-
-    
 
 
     .main-header {
@@ -1362,7 +1383,10 @@ footer {
         height: auto;
     }
 
-  
+}
 
-
+@media only screen and (max-width: 767px) {
+    #mobile{
+        display: none !important;
+    }
 }

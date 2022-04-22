@@ -27,8 +27,9 @@ body {
 }
 
 #links li {
-    color: white;
+    color: #fff;
     align-self: center;
+    margin-top: 3px;
     padding: 0;
     font-weight: 700;
     font-size: 14px;
@@ -51,7 +52,7 @@ body {
 
 ul a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     align-self: center;
     margin-left: 5px;
     font-size: 14px;
@@ -87,7 +88,7 @@ nav {
 
 .open-header p {
     margin: 0;
-    color: white;
+    color: #fff;
     text-align: end;
 }
 
@@ -100,7 +101,7 @@ nav {
 
 .open-header {
     height: 30px;
-    background-color: black;
+    background-color: #000000;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -119,12 +120,12 @@ nav {
 }
 
 .rectangle {
-    color: white;
+    color: #fff;
     width: 550px;
     height: 300px;
     position: sticky;
-    transform: translateY(-160%);
-    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(60%);
+    background-color: #0000004d;
     padding: 40px 40px 20px 250px;
 }
 
@@ -180,16 +181,16 @@ nav {
 }
 
 .float-menu {
-    background-color: black;
+    background-color: #000000;
     max-height: 395px;
     max-width: 300px;
     margin-top: 85px;
     position: absolute;
-    left: -200px;
+    left: -400px;
     top: 8px;
     z-index: 1;
     display: flex;
-    align-items: center;
+    transition: 0.3s;
 }
 
 .float-menu ul {
@@ -217,10 +218,16 @@ nav {
     cursor: pointer;
 }
 
+#img1{
+    display: none;
+}
 
 
 
 @media (max-width: 1000px) {
+    #img1{
+        display: block;
+    }
 
     .float-menu.active {
         left: 0;

@@ -25,7 +25,7 @@ hamburger.addEventListener("click", () => {
 })
 
 
-let radio_array = new Array(radio1, radio2, radio3, radio4, radio5);
+let radio_array = [radio1, radio2, radio3, radio4, radio5];
 
 let radio_length = radio_array.length;
 let imgSrc = ["img/image-1.jpg", "img/image-2.jpeg", "img/image-3.jpg", "img/image4.jpg", "img/image5.jpg"];
